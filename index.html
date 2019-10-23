@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   <script>
+       function buttonclick()
+       {
+           str1 = document.getElementById("user").value;
+           str2 = document.getElementById("pass").value;
+           str3 = document.getElementById("check1").value;
+           str4 = document.getElementById("check2").value;
+           if(check1.checked == false && check2.checked == false)
+           {
+               alert("tick one please")
+           }
+           else
+           {
+                if(str1==str2 && check1.checked== true)
+                {
+                    alert("Hello " + str1 + " you can enter now in your " + str3 + " account");
+                }
+                else
+                {
+                    if(str1==str2 && check2.checked== true)
+                    {
+                        alert("Hello " + str1 + " you can enter now in your " + str4 + " account");   
+                    }
+                    else
+                    {
+                        alert("username / id do not match")
+                    }
+                }
+           }
+       }
+   
+   </script>
+</head>
+<body>
+    <input id="user" placeholder="username">
+    <input id="pass" type="password" placeholder="password">
+  <input type="radio" id="check1" name="social" value="Facebook">Facebook</input>
+  <input type="radio" id="check2" name="social" value="twitter">Twitter</input>
+    <button onclick="buttonclick()">click</button>
+
+
+</body>
+</html>
