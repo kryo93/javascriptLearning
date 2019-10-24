@@ -17,7 +17,18 @@
        
                     if(str1==str2)
                     {
-                        alert("Hello " + str1 + " you can enter now in your " + str4 + " account");   
+                        alert("Hello " + str1 + " you can enter now in your " + str4 + " account"); 
+                        if(confirm)
+                        {
+                        if(str3.selectedIndex==0)
+                        {
+                        window.open("https://www.facebook.com");
+                        }
+                        else
+                        {
+                            window.open("https://www.twitter.com")
+                        }
+                        }
                     }
                     else
                     {
